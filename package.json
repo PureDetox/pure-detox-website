@@ -3,13 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "npm run build && firebase deploy",
-    "firebase:init": "firebase init hosting",
-    "firebase:deploy": "firebase deploy"
+    "lint": "next lint"
   },
   "dependencies": {
     "@fontsource/inter": "^5.0.18",
