@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
+}
+
+body {
+	background: var(--background);
+	color: var(--foreground);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* INP/CLS hardening and sensible defaults */
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+html:focus-within {
+	scroll-behavior: smooth;
+}
+img, svg, video, canvas, iframe {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+img[width][height] {
+	height: auto;
+}
+img {
+	content-visibility: auto;
+}
+:where(img[width][height], video[width][height]) { aspect-ratio: attr(width number) / attr(height number); }
+img:not([width][height]) { aspect-ratio: 16 / 9; }
+video:not([width][height]) { aspect-ratio: 16 / 9; }
+/* Reserve space for common banners (e.g., consent) to avoid layout shifts */
+.c-banner-reserved { min-height: 56px; }
+
+/* Sticky CTA (no CLS) */
+.sticky-spacer { min-height: 68px; }
+.sticky-cta {
+  position: sticky;
+  bottom: 0;
+  background: color-mix(in oklab, var(--background), #000 2%);
+  border-top: 1px solid color-mix(in oklab, var(--foreground), transparent 92%);
+  padding: .5rem 0;
+  transform: translateY(100%);
+  transition: transform .3s var(--ease);
+  will-change: transform;
+  z-index: 50;
+}
+.sticky-cta.is-visible { transform: translateY(0); }
+
+:where(h1, h2, h3) {
+	text-wrap: balance;
+}
+:where(p, li) {
+	text-wrap: pretty;
+}
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.001ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Sticky CTA (no-CLS) */
+.sticky-cta { position: fixed; left: 0; right: 0; bottom: 0;
+  padding: calc(12px + env(safe-area-inset-bottom)) 16px 16px;
+  transform: translateY(110%);
+  transition: transform 160ms var(--ease);
+  background: color-mix(in oklab, black 90%, white 10%);
+  backdrop-filter: saturate(1.1) blur(6px);
+  z-index: 40;
+  color: white;
+}
+.sticky-cta.is-visible { transform: translateY(0); }
+.sticky-spacer { height: 72px; }
+
+/* Sticky summary (pricing) */
+.sticky-summary { position: fixed; left: 0; right: 0; bottom: 0;
+  padding: calc(12px + env(safe-area-inset-bottom)) 16px 16px;
+  transform: translateY(110%);
+  transition: transform 160ms var(--ease);
+  background: color-mix(in oklab, white 85%, black 0%);
+  backdrop-filter: saturate(1.1) blur(6px);
+  z-index: 40;
+}
+.sticky-summary.is-visible { transform: translateY(0); }
+.sticky-summary-spacer { height: 72px; }
+
+
