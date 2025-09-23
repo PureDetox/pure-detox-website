@@ -9,17 +9,27 @@ export const metadata: Metadata = {
   authors: [{ name: "NexusEdge", url: "https://puredetox.app" }],
   creator: "NexusEdge",
   publisher: "NexusEdge",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
+      { url: "/logo.jpg", sizes: "192x192", type: "image/jpeg" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/logo.jpg",
+  },
   openGraph: {
     type: "website",
     siteName: "Pure Detox",
     title: "Pure Detox — Android Digital Detox",
     description: "Block TikTok/Shorts, focus modes for ADHD, and ethical recovery.",
     url: "/",
+    images: [{ url: "/logo.jpg", width: 400, height: 400, alt: "Pure Detox Logo" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pure Detox — Android Digital Detox",
     description: "Block TikTok/Shorts, focus modes for ADHD, and ethical recovery.",
+    images: ["/logo.jpg"],
   },
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
@@ -70,13 +80,17 @@ export default function RootLayout({
         <footer className="bg-gray-50 border-t border-gray-200 mt-16">
           <div className="container py-12">
             <div className="grid md:grid-cols-4 gap-8">
-              <div className="space-y-4">
-                <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">PD</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900">Pure Detox</h3>
-                </div>
+               <div className="space-y-4">
+                 <div className="flex items-center space-x-2">
+                   <img 
+                     src="/logo.jpg" 
+                     alt="Pure Detox Logo" 
+                     className="w-8 h-8 rounded-lg object-cover"
+                     width={32}
+                     height={32}
+                   />
+                   <h3 className="text-xl font-bold text-gray-900">Pure Detox</h3>
+                 </div>
                 <p className="text-gray-600 leading-relaxed">
                   Reclaim your focus. Block distractions on Android without root. Ethical commitment with compassionate recovery.
                 </p>

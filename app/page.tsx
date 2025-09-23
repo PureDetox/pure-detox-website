@@ -115,17 +115,21 @@ export default function Home() {
               </div>
               
               <div className="relative order-first lg:order-last">
-                <div className="hero-skeleton aspect-[4/3] bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl border border-gray-200 flex items-center justify-center mx-auto max-w-sm lg:max-w-none">
-                  <div className="text-center space-y-3 sm:space-y-4">
-                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-600 rounded-lg sm:rounded-xl mx-auto flex items-center justify-center">
-                      <span className="text-xl sm:text-2xl text-white">📱</span>
-                    </div>
-                    <div className="space-y-1 sm:space-y-2">
-                      <div className="text-base sm:text-lg font-semibold text-gray-800">Pure Detox</div>
-                      <div className="text-xs sm:text-sm text-gray-600">Android Digital Detox</div>
-                    </div>
-                  </div>
-                </div>
+                 <div className="hero-skeleton aspect-[4/3] bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl border border-gray-200 flex items-center justify-center mx-auto max-w-sm lg:max-w-none">
+                   <div className="text-center space-y-3 sm:space-y-4">
+                     <img 
+                       src="/logo.jpg" 
+                       alt="Pure Detox Logo" 
+                       className="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-xl shadow-lg object-cover"
+                       width={80}
+                       height={80}
+                     />
+                     <div className="space-y-1 sm:space-y-2">
+                       <div className="text-base sm:text-lg font-semibold text-gray-800">Pure Detox</div>
+                       <div className="text-xs sm:text-sm text-gray-600">Android Digital Detox</div>
+                     </div>
+                   </div>
+                 </div>
                 {/* Floating Elements - Hidden on mobile for cleaner look */}
                 <div className="hidden sm:block absolute -top-4 -right-4 w-16 h-16 lg:w-20 lg:h-20 bg-yellow-100 rounded-full flex items-center justify-center shadow-lg">
                   <span className="text-xl lg:text-2xl">⚡</span>

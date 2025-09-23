@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 interface BreadcrumbItem {
   label: string;
@@ -9,46 +10,52 @@ interface BreadcrumbItem {
 }
 
 export default function Header() {
-  const pathname = usePathname();
+  const [breadcrumbs, setBreadcrumbs] = useState<BreadcrumbItem[]>([{ label: 'Home', href: '/' }]);
   
-  const getBreadcrumbs = (): BreadcrumbItem[] => {
-    const pathSegments = pathname.split('/').filter(segment => segment !== '');
-    const breadcrumbs: BreadcrumbItem[] = [
-      { label: 'Home', href: '/' }
-    ];
-    
-    if (pathSegments.length === 0) return breadcrumbs;
-    
-    // Add breadcrumbs based on current path
-    if (pathSegments[0] === 'pricing') {
-      breadcrumbs.push({ label: 'Pricing', href: '/pricing' });
-    } else if (pathSegments[0] === 'privacy') {
-      breadcrumbs.push({ label: 'Privacy Policy', href: '/privacy' });
-    } else if (pathSegments[0] === 'terms') {
-      breadcrumbs.push({ label: 'Terms of Service', href: '/terms' });
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const pathname = window.location.pathname;
+      const pathSegments = pathname.split('/').filter(segment => segment !== '');
+      const newBreadcrumbs: BreadcrumbItem[] = [
+        { label: 'Home', href: '/' }
+      ];
+      
+      if (pathSegments.length === 0) {
+        setBreadcrumbs(newBreadcrumbs);
+        return;
+      }
+      
+      // Add breadcrumbs based on current path
+      if (pathSegments[0] === 'pricing') {
+        newBreadcrumbs.push({ label: 'Pricing', href: '/pricing' });
+      } else if (pathSegments[0] === 'privacy') {
+        newBreadcrumbs.push({ label: 'Privacy Policy', href: '/privacy' });
+      } else if (pathSegments[0] === 'terms') {
+        newBreadcrumbs.push({ label: 'Terms of Service', href: '/terms' });
+      }
+      
+      setBreadcrumbs(newBreadcrumbs);
     }
-    
-    return breadcrumbs;
-  };
-
-  const breadcrumbs = getBreadcrumbs();
+  }, []);
 
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg">
-              <div className="w-6 h-6 bg-white rounded-md flex items-center justify-center">
-                <span className="text-blue-600 font-bold text-sm">📱</span>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-900">Pure Detox</span>
-              <span className="text-xs text-gray-500 hidden sm:block">Digital Detox for Android</span>
-            </div>
-          </Link>
+           {/* Logo */}
+           <Link href="/" className="flex items-center space-x-3">
+             <img 
+               src="/logo.jpg" 
+               alt="Pure Detox Logo" 
+               className="w-10 h-10 rounded-xl shadow-lg object-cover"
+               width={40}
+               height={40}
+             />
+             <div className="flex flex-col">
+               <span className="text-xl font-bold text-gray-900">Pure Detox</span>
+               <span className="text-xs text-gray-500 hidden sm:block">Digital Detox for Android</span>
+             </div>
+           </Link>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
