@@ -60,21 +60,101 @@ export default function PricingPage() {
 
   return (
     <>
-      <main className="container py-10">
+      <main className="min-h-screen bg-gray-50">
         <div id="sticky-summary-sentinel" />
-        <header className="mb-6">
-          <h1 className="text-3xl md:text-4xl font-semibold">Pricing</h1>
-          <p className="opacity-80">7‑day rescue trial. Ethical commitment with emergency exits. No data sale. Minimal data by default.</p>
-        </header>
+        
+        {/* Hero Section */}
+        <section className="bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 sm:py-16">
+          <div className="container px-4 sm:px-6">
+            <div className="text-center max-w-3xl mx-auto">
+              <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-6">
+                💰 14-day money-back guarantee
+              </div>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+                Choose Your <span className="text-blue-600">Digital Detox</span> Plan
+              </h1>
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8">
+                7‑day rescue trial. Ethical commitment with emergency exits. No data sale. Minimal data by default.
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                <div className="flex items-center gap-2">
+                  <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                    <span className="text-green-600 text-xs">✓</span>
+                  </div>
+                  <span className="text-sm text-gray-600">7-day free trial</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center">
+                    <span className="text-blue-600 text-xs">✓</span>
+                  </div>
+                  <span className="text-sm text-gray-600">No root required</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center">
+                    <span className="text-purple-600 text-xs">✓</span>
+                  </div>
+                  <span className="text-sm text-gray-600">Cancel anytime</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <PlanTable plans={plans} />
-        <ROICalculator planPriceMonthly={8.99} />
-        <ProofStrip />
+        {/* Pricing Plans */}
+        <section className="py-12 sm:py-16">
+          <div className="container px-4 sm:px-6">
+            <PlanTable plans={plans} />
+          </div>
+        </section>
 
-        <section aria-label="FAQ" className="py-8">
-          <div className="container">
-            <h2 className="text-2xl font-semibold mb-3">FAQ</h2>
-            <FAQAccordion items={faqs} />
+        {/* ROI Calculator */}
+        <section className="py-12 sm:py-16 bg-white">
+          <div className="container px-4 sm:px-6">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4">Calculate Your Time Savings</h2>
+              <p className="text-lg text-gray-600">See how much time and money you could save with Pure Detox</p>
+            </div>
+            <ROICalculator planPriceMonthly={8.99} />
+          </div>
+        </section>
+
+        {/* Social Proof */}
+        <section className="py-12">
+          <div className="container px-4 sm:px-6">
+            <ProofStrip />
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-12 sm:py-16 bg-white">
+          <div className="container px-4 sm:px-6">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p className="text-lg text-gray-600">Everything you need to know about Pure Detox pricing</p>
+              </div>
+              <FAQAccordion items={faqs} />
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA */}
+        <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+          <div className="container px-4 sm:px-6 text-center">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to reclaim your time?</h2>
+              <p className="text-lg mb-8 opacity-90">
+                Start your 7-day free trial today. No credit card required.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-lg">
+                  Start Free Trial
+                </button>
+                <button className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-200">
+                  Contact Sales
+                </button>
+              </div>
+            </div>
           </div>
         </section>
       </main>
