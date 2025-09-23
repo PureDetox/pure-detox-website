@@ -43,7 +43,7 @@ export default function TermsOfService() {
                 <strong>&quot;Indian Contract Law&quot;</strong> shall mean the Indian Contract Act, 1872 (Act No. 9 of 1872), as amended from time to time, and includes other applicable laws relating to civil obligations in force within the territory of India;
               </div>
               <div>
-                <strong>&quot;Conditions&quot;</strong> mean these Conditions of Use of AppBlock Service;
+                <strong>&quot;Conditions&quot;</strong> mean these Conditions of Use of PureDetox Service;
               </div>
               <div>
                 <strong>&quot;Regulation&quot;</strong> means Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation);
@@ -52,10 +52,10 @@ export default function TermsOfService() {
                 <strong>&quot;Profile&quot;</strong> means a User&apos;s account created by registration;
               </div>
               <div>
-                <strong>&quot;Operator&quot;</strong> means MobileSoft s.r.o., identification no.: 02573857, a company with its registered office at Ceskoskalick� 650, 549 41 Cerven� Kostelec, registered in the Commercial Register administered by the Regional Court in Hradec Kr�lov�, section C, file 33165;
+                <strong>&quot;Operator&quot;</strong> means NexusEdge (“we,” “our,” “us”), operated by Ridwan Mullick,  At present, Nexus Edge is in its early stage and pre-revenue.   All services are provided under the responsibility of Ridwan Mullick ;
               </div>
               <div>
-                <strong>&quot;Service&quot;</strong> means service for users provided in the AppBlock application;
+                <strong>&quot;Service&quot;</strong> means service for users provided in the PureDetox application;
               </div>
               <div>
                 <strong>&quot;User&quot;</strong> means any individual who uses the Application or a visitor to the Web Interface;
