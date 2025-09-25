@@ -121,15 +121,16 @@ export default function RootLayout({
                 </ul>
               </div>
               
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-4">Legal & Company</h4>
-                <ul className="space-y-3 text-gray-600">
-                  <li><a href="/privacy" className="hover:text-blue-600 transition-colors">Privacy Policy</a></li>
-                  <li><a href="/terms" className="hover:text-blue-600 transition-colors">Terms of Service</a></li>
-                  <li><span className="text-sm">NexusEdge</span></li>
-                  <li><span className="text-sm">Kolkata, West Bengal, India</span></li>
-                </ul>
-              </div>
+                     <div>
+                       <h4 className="font-semibold text-gray-900 mb-4">Legal & Company</h4>
+                       <ul className="space-y-3 text-gray-600">
+                         <li><a href="/privacy" className="hover:text-blue-600 transition-colors">Privacy Policy</a></li>
+                         <li><a href="/terms" className="hover:text-blue-600 transition-colors">Terms of Service</a></li>
+                         <li><a href="/account-deletion" className="hover:text-red-600 transition-colors">Delete Account</a></li>
+                         <li><span className="text-sm">NexusEdge</span></li>
+                         <li><span className="text-sm">Kolkata, West Bengal, India</span></li>
+                       </ul>
+                     </div>
             </div>
             
             <div className="border-t border-gray-200 pt-8 mt-8">

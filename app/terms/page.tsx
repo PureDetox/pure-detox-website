@@ -131,6 +131,12 @@ export default function TermsOfService() {
                   <strong>Transparency First:</strong> We explain every requested permission inside the app and on our <Link href="/permissions" className="text-blue-600 hover:text-blue-700 font-medium underline">Permission Clarifications page</Link>. No hidden permissions or unexpected access requests.
                 </p>
               </div>
+
+              <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg my-6">
+                <p className="text-base leading-relaxed">
+                  <strong>Account Management:</strong> You can delete your account and all associated data at any time. Visit our <Link href="/account-deletion" className="text-red-600 hover:text-red-700 font-medium underline">Account Deletion page</Link> for detailed instructions and information about data retention.
+                </p>
+              </div>
               
               <p><strong>4.9</strong> The User expressly acknowledges any and all risks connected with the use of our Application for the purposes of blocking websites, applications or notifications and acknowledges that the Operator shall not in any way be liable for any damage, harm or any other injury caused by blocking of the websites, applications or notifications by the User through our Application.</p>
             </div>

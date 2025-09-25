@@ -34,6 +34,8 @@ export default function Header() {
                newBreadcrumbs.push({ label: 'Privacy Policy', href: '/privacy' });
              } else if (pathSegments[0] === 'terms') {
                newBreadcrumbs.push({ label: 'Terms of Service', href: '/terms' });
+             } else if (pathSegments[0] === 'account-deletion') {
+               newBreadcrumbs.push({ label: 'Account Deletion', href: '/account-deletion' });
              }
       
       setBreadcrumbs(newBreadcrumbs);

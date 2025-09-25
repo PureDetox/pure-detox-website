@@ -329,6 +329,12 @@ export default function PrivacyPolicy() {
               <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <h3 className="font-semibold text-lg mb-3">Right to erasure:</h3>
                 <p>If you request an erasure, the Operator will delete your personal data, provided that they are no longer necessary for the purpose for which they were collected or otherwise processed. You can request account deletion or permanent deletion of your backups at any time by contacting us.</p>
+                
+                <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+                  <p className="text-sm text-red-700">
+                    🗑️ <strong>Need to delete your account?</strong> Visit our <Link href="/account-deletion" className="text-red-600 hover:text-red-700 font-medium underline">Account Deletion page</Link> for step-by-step instructions and information about what data is removed.
+                  </p>
+                </div>
               </div>
 
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
@@ -370,6 +376,7 @@ export default function PrivacyPolicy() {
                   <li><span className="font-medium">Response Time:</span> Within 30 days</li>
                   <li><span className="font-medium">Support:</span> Available via email</li>
                   <li><span className="font-medium">Data Protection:</span> GDPR Compliant</li>
+                  <li><span className="font-medium">Account Deletion:</span> <Link href="/account-deletion" className="text-blue-400 hover:text-blue-300">Delete Account</Link></li>
                   <li><span className="font-medium">Last Updated:</span> January 9, 2024</li>
                 </ul>
               </div>
