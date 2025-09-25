@@ -2,8 +2,8 @@ import Script from "next/script";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Account Deletion - Pure Detox",
-  description: "Request deletion of your PureDetox account and associated data. Learn about our data retention policies and deletion process.",
+  title: "Account & Data Deletion - Pure Detox",
+  description: "Delete your PureDetox account or specific data via email. Choose full account deletion or selective data deletion while keeping your account active.",
   robots: "index, follow",
 };
 
@@ -41,7 +41,24 @@ export default function AccountDeletionPage() {
 
           {/* How to Delete */}
           <section className="mb-12">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900">How to Delete Your Account</h2>
+            <h2 className="text-3xl font-bold mb-8 text-gray-900">Account & Data Deletion Options</h2>
+            
+            {/* Option Selection */}
+            <div className="mb-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
+              <h3 className="text-xl font-bold mb-4 text-blue-800">Choose Your Deletion Type</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white p-4 rounded-lg border border-blue-200">
+                  <h4 className="font-semibold text-blue-700 mb-2">🗑️ Full Account Deletion</h4>
+                  <p className="text-sm text-blue-600">Delete your entire account and all associated data permanently.</p>
+                </div>
+                <div className="bg-white p-4 rounded-lg border border-blue-200">
+                  <h4 className="font-semibold text-blue-700 mb-2">📄 Data Deletion Only</h4>
+                  <p className="text-sm text-blue-600">Keep your account but delete specific data (backups, settings, etc.).</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 className="text-2xl font-bold mb-6 text-gray-900">Full Account Deletion</h3>
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* Method 1: In-App */}
@@ -118,6 +135,88 @@ export default function AccountDeletionPage() {
                 <div className="mt-6 p-4 bg-yellow-50 rounded-lg">
                   <p className="text-sm text-yellow-800">
                     <strong>⏱️ Processing Time:</strong> Email requests are processed within 48 hours.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Data Deletion Only Section */}
+            <div className="mt-16 mb-12">
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Data Deletion Only (Keep Account Active)</h3>
+              
+              <div className="bg-green-50 border border-green-200 rounded-xl p-6 mb-8">
+                <h4 className="text-lg font-bold mb-4 text-green-800">📄 Selective Data Deletion</h4>
+                <p className="text-green-700 mb-4">
+                  Want to keep your account but delete specific data? You can request deletion of individual data types while keeping your account active.
+                </p>
+              </div>
+
+              {/* Email Method for Data Deletion */}
+              <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                    <span className="text-2xl">📧</span>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900">Email Data Deletion Request</h4>
+                    <p className="text-sm text-gray-600">Specify exactly what data to delete</p>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <p className="text-gray-700">Send your specific data deletion request to:</p>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <a 
+                      href="mailto:ridwan@puredetox.app?subject=Data Deletion Request - Keep Account Active&body=I would like to delete specific data from my PureDetox account while keeping the account active.%0A%0APlease delete the following data:%0A☐ Backup files%0A☐ Personal settings and configurations%0A☐ Usage statistics%0A☐ Support conversation history%0A☐ Other (please specify): ____________%0A%0AMy account email: ____________%0A%0APlease confirm when this has been completed."
+                      className="text-blue-600 hover:text-blue-700 font-medium text-lg"
+                    >
+                      ridwan@puredetox.app
+                    </a>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <h5 className="font-medium text-gray-700">What you can request to delete:</h5>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="bg-blue-50 p-4 rounded-lg">
+                        <h6 className="font-semibold text-blue-800 mb-2">App Data</h6>
+                        <ul className="text-sm text-blue-600 space-y-1">
+                          <li>• Backup files and configurations</li>
+                          <li>• Personal settings and preferences</li>
+                          <li>• Session profiles and schedules</li>
+                          <li>• Usage statistics and history</li>
+                        </ul>
+                      </div>
+                      
+                      <div className="bg-purple-50 p-4 rounded-lg">
+                        <h6 className="font-semibold text-purple-800 mb-2">Account Data</h6>
+                        <ul className="text-sm text-purple-600 space-y-1">
+                          <li>• Support conversation history</li>
+                          <li>• Feedback and survey responses</li>
+                          <li>• Device information logs</li>
+                          <li>• Custom preferences</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
+                      <h6 className="font-semibold text-yellow-800 mb-2">📋 Email Template Instructions</h6>
+                      <div className="text-sm text-yellow-700 space-y-2">
+                        <p><strong>Subject:</strong> "Data Deletion Request - Keep Account Active"</p>
+                        <p><strong>Include in your email:</strong></p>
+                        <ul className="ml-4 space-y-1">
+                          <li>• Your account email address</li>
+                          <li>• Specific data types you want deleted (use checkboxes)</li>
+                          <li>• Any additional details or special requests</li>
+                          <li>• Confirmation that you want to keep your account active</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-6 p-4 bg-green-50 rounded-lg">
+                  <p className="text-sm text-green-800">
+                    <strong>⏱️ Processing Time:</strong> Data deletion requests are processed within 48-72 hours. You'll receive confirmation via email.
                   </p>
                 </div>
               </div>
@@ -248,7 +347,17 @@ export default function AccountDeletionPage() {
               
               <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <h3 className="font-semibold text-lg mb-3 text-gray-900">❓ Can I delete specific data instead of my entire account?</h3>
-                <p className="text-gray-600">For partial data deletion requests, please contact our support team at <a href="mailto:ridwan@puredetox.app" className="text-blue-600 hover:text-blue-700 font-medium">ridwan@puredetox.app</a> to discuss your specific needs.</p>
+                <p className="text-gray-600">Yes! Use the "Data Deletion Only" section above to request deletion of specific data types while keeping your account active. This includes backups, settings, usage statistics, and support history.</p>
+              </div>
+              
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 className="font-semibold text-lg mb-3 text-gray-900">❓ What's the difference between account deletion and data deletion?</h3>
+                <p className="text-gray-600"><strong>Account deletion:</strong> Removes your entire account and all data permanently. <strong>Data deletion:</strong> Removes specific data types while keeping your account active so you can continue using the app.</p>
+              </div>
+              
+              <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <h3 className="font-semibold text-lg mb-3 text-gray-900">❓ Can I delete my data and then create a fresh account?</h3>
+                <p className="text-gray-600">Yes, you can either: 1) Use "Data Deletion Only" to clear your current account data, or 2) Delete your entire account and create a new one. Both options give you a fresh start.</p>
               </div>
             </div>
           </section>
