@@ -40,15 +40,30 @@ export default function PrivacyPolicy() {
 
             <p className="mb-4">The Operator may change this Privacy Policy at any time with immediate effect. We will inform you of such changes. Should this Privacy Policy be changed in a manner that requires your consent, we will request your consent again.</p>
 
-            <p className="mb-4">The latest version hereof is available in the footer of the Web Interface and through a link in the relevant section of the Application.</p>
+              <p className="mb-4">The latest version hereof is available in the footer of the Web Interface and through a link in the relevant section of the Application.</p>
 
-            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-6">
+              <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg mb-6">
+                <p className="text-base leading-relaxed">
+                  <strong>Permission Transparency:</strong> For more details on permissions we request and why, please see our <Link href="/permissions" className="text-blue-600 hover:text-blue-700 font-medium underline">Permission Clarifications page</Link>.
+                </p>
+              </div>
+
+              <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-6">
               <p className="font-semibold text-yellow-800">If you choose to use our Service, then you agree to the collection and use of information in relation to this policy.</p>
             </div>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">1. General Information</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">1. Eligibility and Age Requirements</h2>
+            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg mb-6">
+              <p className="text-base leading-relaxed">
+                <strong>Age and Consent:</strong> Our services are intended for users aged 18 and over, or 16 and over with parental consent. We do not knowingly collect data from children under 16.
+              </p>
+            </div>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">2. General Information</h2>
             <div className="space-y-4 text-base leading-relaxed">
               <p>Under the Regulation, the Operator is the controller of your personal data, i.e. the Operator collects, stores and uses (and otherwise processes) your personal data in connection with its business activities (the individual purposes for which the personal data are processed are specified below).</p>
               
@@ -61,9 +76,15 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">2. Information Collection and Use</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">3. Information Collection and Use</h2>
             <div className="space-y-4 text-base leading-relaxed">
               <p>NexusEdge does not collect or store any Personal Information except data needed for the backup system to store progress, save Session Profiles and Smart Shield blocking setups or synchronize app settings, nor does it share any such information with third parties. This data is voluntary and other services may be used without creating an account. All statistics and related configurations available through the Service are stored locally on the user&apos;s device for their use only and are not accessible by NexusEdge and its affiliates. However, we use third-party services for analyses, advertisement and bug reporting. These services are managed by their own Privacy Policy:</p>
+              
+              <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg mb-6">
+                <p className="text-base leading-relaxed">
+                  <strong>Analytics Disclosure:</strong> We may collect anonymous technical data (such as crash logs, error reports, and performance metrics) strictly for the purpose of improving app stability. This data does not include any personally identifiable information.
+                </p>
+              </div>
               
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="font-semibold mb-3 text-lg">Third-Party Services:</h3>
@@ -79,7 +100,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">3. Purposes of Personal Data Processing</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">4. Purposes of Personal Data Processing</h2>
             <p className="mb-4">Your personal data may be processed by the Operator for the following purposes:</p>
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <ul className="space-y-3">
@@ -108,8 +129,8 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">4. Types of Personal Data Processed</h2>
-            <h3 className="text-xl font-semibold mb-4">4.1 Categories of Personal Data</h3>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">5. Types of Personal Data Processed</h2>
+            <h3 className="text-xl font-semibold mb-4">5.1 Categories of Personal Data</h3>
             <p className="mb-4">In connection with your activity and depending on the content thereof, the following personal data may be processed in the course of the provision of the Service:</p>
             
             <div className="overflow-x-auto shadow-lg rounded-lg">
@@ -139,7 +160,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">5. Means of Personal Data Processing</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">6. Means of Personal Data Processing</h2>
             <div className="space-y-4 text-base leading-relaxed">
               <p>Through registration, we collect personal data via the form in the Application. The Operator thus gets access to your e-mail and password. It is not possible to complete the registration (or create a Profile) without processing these personal data. In addition to this, you may at any time also fill in voluntary information.</p>
 
@@ -158,7 +179,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">6. Recipients of Data</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">7. Recipients of Data</h2>
             <div className="space-y-4 text-base leading-relaxed">
               <p>We disclose your personal data only to authorized employees or to individual processors of personal data contracted by the Operator, or to other controllers. However, we always disclose your data only to the extent necessary to fulfil the individual purposes of the processing, and on the basis of an appropriate legal title for the processing of personal data. The categories of recipients of personal data are as follows:</p>
               
@@ -176,7 +197,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">7. Personal Data Retention Period</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">8. Personal Data Retention Period</h2>
             <div className="overflow-x-auto shadow-lg rounded-lg">
               <table className="w-full border-collapse bg-white">
                 <thead>
@@ -209,10 +230,37 @@ export default function PrivacyPolicy() {
                 </tbody>
               </table>
             </div>
+            
+            <div className="mt-8 bg-green-50 border-l-4 border-green-400 p-6 rounded-r-lg">
+              <h3 className="font-semibold text-lg mb-3 text-green-800">Data Retention Policy</h3>
+              <div className="space-y-2 text-base leading-relaxed">
+                <p><strong>Backups:</strong> Backups are stored until you disable backups in the app or request deletion.</p>
+                <p><strong>Analytics Data:</strong> Anonymous analytics data may be retained for up to 24 months for stability analysis and to fulfill our offered features.</p>
+              </div>
+            </div>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">8. Security and Confidential Nature of Personal Data</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">9. Backups</h2>
+            <div className="space-y-4 text-base leading-relaxed">
+              <p>Our app offers an optional backup feature for your app configuration (such as block lists and preferences). If you choose to enable backups, this data is stored securely using Google Firebase and is encrypted in transit and at rest.</p>
+              
+              <p>These backups are only used to restore your settings when you request it.</p>
+
+              <p>Our team does not access backups by default. Access is possible only when you explicitly request support (for example, to disable blocking without doing a full reset).</p>
+
+              <div className="bg-gray-50 border-l-4 border-gray-400 p-6 rounded-r-lg">
+                <p className="text-base leading-relaxed">
+                  <strong>Support Access:</strong> In rare cases where you contact our support team and explicitly request assistance, our team may temporarily access your backup data to help restore or adjust your app settings. This access is strictly limited to your request and is never done otherwise.
+                </p>
+              </div>
+
+              <p>You may disable backups at any time in the app settings. You can also request permanent deletion of your backups by contacting us at <a href="mailto:ridwan@puredetox.app" className="text-blue-600 hover:underline font-medium">ridwan@puredetox.app</a>.</p>
+            </div>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">10. Security and Confidential Nature of Personal Data</h2>
             <div className="space-y-4 text-base leading-relaxed">
               <p>Personal data will be secured in such a way and using such technical and organizational means that a complete protection of personal data is provided in accordance with the Regulation and the applicable regulations governing personal data protection.</p>
               
@@ -220,24 +268,32 @@ export default function PrivacyPolicy() {
 
               <p>Personal data are stored on secured servers in appropriate IT systems. The Operator adopted adequate technical and organizational measures to prevent any loss or destruction of personal data, any access to the data by unauthorised persons, any changes or disclosure thereof.</p>
 
+              <p>Backups stored in Firebase are encrypted in transit and at rest.</p>
+
               <p>Your Profile may be accessed only with a personal password. It is necessary to refrain from disclosing your login data to third parties. The Operator does not assume any liability for the misuse of the passwords used.</p>
             </div>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">9. Installed Apps Inventory Access</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">11. Installed Apps Inventory Access</h2>
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
               <p className="text-base leading-relaxed">The Service requires access to the user&apos;s inventory of installed apps in order to provide its basic functionality, such as blocking setup and usage statistics. This data is used solely in order to provide the required functionality to the user, as per the user&apos;s configuration. No app inventory data is stored or used in any other way.</p>
+            </div>
+            
+            <div className="mt-6 bg-gray-50 border border-gray-200 rounded-lg p-4">
+              <p className="text-sm text-gray-700">
+                📋 <strong>Want to understand all permissions?</strong> Visit our comprehensive <Link href="/permissions" className="text-blue-600 hover:text-blue-700 font-medium underline">Permission Clarifications page</Link> for detailed explanations of every access request.
+              </p>
             </div>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">10. Log Data</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">12. Log Data</h2>
             <p className="text-base leading-relaxed">We want to inform you that whenever you use our Service, we may collect data and information, called Log Data, (through third party products) on your device in case of an error occurring in the app. This Log Data may include information such as your device Internet Protocol (&quot;IP&quot;) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics. This data is used solely for the purpose of improving the Service and providing reliability, does not hold any information about the user and cannot be used to identify the user.</p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">11. Service Providers</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">13. Service Providers</h2>
             <div className="space-y-4 text-base leading-relaxed">
               <p>We may employ third-party companies (see the complete list under Information Collection and Use) due to the following reasons:</p>
               <div className="bg-gray-50 p-6 rounded-lg">
@@ -256,7 +312,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">12. Rights of the Data Subjects</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">14. Rights of the Data Subjects</h2>
             <p className="mb-6 text-base">In connection with personal data processing, you have the rights specified below, under the conditions of articles 15 to 21 of the Regulation, that you may exercise at any time:</p>
             
             <div className="space-y-6">
@@ -272,7 +328,7 @@ export default function PrivacyPolicy() {
 
               <div className="bg-white border border-gray-200 rounded-lg p-6">
                 <h3 className="font-semibold text-lg mb-3">Right to erasure:</h3>
-                <p>If you request an erasure, the Operator will delete your personal data, provided that they are no longer necessary for the purpose for which they were collected or otherwise processed.</p>
+                <p>If you request an erasure, the Operator will delete your personal data, provided that they are no longer necessary for the purpose for which they were collected or otherwise processed. You can request account deletion or permanent deletion of your backups at any time by contacting us.</p>
               </div>
 
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">

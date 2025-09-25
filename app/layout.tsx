@@ -101,15 +101,15 @@ export default function RootLayout({
                 </div>
               </div>
               
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-4">Product</h4>
-                <ul className="space-y-3 text-gray-600">
-                  <li><a href="/pricing" className="hover:text-blue-600 transition-colors">Pricing</a></li>
-                  <li><span className="text-gray-400">App Features</span></li>
-                  <li><span className="text-gray-400">Focus Sessions</span></li>
-                  <li><span className="text-gray-400">Block Management</span></li>
-                </ul>
-              </div>
+                     <div>
+                       <h4 className="font-semibold text-gray-900 mb-4">Product</h4>
+                       <ul className="space-y-3 text-gray-600">
+                         <li><a href="/pricing" className="hover:text-blue-600 transition-colors">Pricing</a></li>
+                         <li><a href="/permissions" className="hover:text-blue-600 transition-colors">Permissions</a></li>
+                         <li><span className="text-gray-400">App Features</span></li>
+                         <li><span className="text-gray-400">Focus Sessions</span></li>
+                       </ul>
+                     </div>
               
               <div>
                 <h4 className="font-semibold text-gray-900 mb-4">Support</h4>

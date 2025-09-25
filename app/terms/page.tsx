@@ -43,7 +43,7 @@ export default function TermsOfService() {
                 <strong>&quot;Indian Contract Law&quot;</strong> shall mean the Indian Contract Act, 1872 (Act No. 9 of 1872), as amended from time to time, and includes other applicable laws relating to civil obligations in force within the territory of India;
               </div>
               <div>
-                <strong>&quot;Conditions&quot;</strong> mean these Conditions of Use of PureDetox Service;
+                <strong>&quot;Conditions&quot;</strong> mean these Conditions of Use of AppBlock Service;
               </div>
               <div>
                 <strong>&quot;Regulation&quot;</strong> means Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation);
@@ -52,10 +52,10 @@ export default function TermsOfService() {
                 <strong>&quot;Profile&quot;</strong> means a User&apos;s account created by registration;
               </div>
               <div>
-                <strong>&quot;Operator&quot;</strong> means NexusEdge (“we,” “our,” “us”), operated by Ridwan Mullick,  At present, Nexus Edge is in its early stage and pre-revenue.   All services are provided under the responsibility of Ridwan Mullick ;
+                <strong>&quot;Operator&quot;</strong> means MobileSoft s.r.o., identification no.: 02573857, a company with its registered office at Ceskoskalick� 650, 549 41 Cerven� Kostelec, registered in the Commercial Register administered by the Regional Court in Hradec Kr�lov�, section C, file 33165;
               </div>
               <div>
-                <strong>&quot;Service&quot;</strong> means service for users provided in the PureDetox application;
+                <strong>&quot;Service&quot;</strong> means service for users provided in the AppBlock application;
               </div>
               <div>
                 <strong>&quot;User&quot;</strong> means any individual who uses the Application or a visitor to the Web Interface;
@@ -124,6 +124,12 @@ export default function TermsOfService() {
               
               <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
                 <p><strong>4.8</strong> The User expressly acknowledges that by installing and using our Application the User may, in its own discretion, temporarily block websites, applications or notifications which is the main purpose of our Application and that by doing so the User will prevent any use of such blocked websites, applications or notifications on its electronic devices for any purpose.</p>
+              </div>
+
+              <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg my-6">
+                <p className="text-base leading-relaxed">
+                  <strong>Transparency First:</strong> We explain every requested permission inside the app and on our <Link href="/permissions" className="text-blue-600 hover:text-blue-700 font-medium underline">Permission Clarifications page</Link>. No hidden permissions or unexpected access requests.
+                </p>
               </div>
               
               <p><strong>4.9</strong> The User expressly acknowledges any and all risks connected with the use of our Application for the purposes of blocking websites, applications or notifications and acknowledges that the Operator shall not in any way be liable for any damage, harm or any other injury caused by blocking of the websites, applications or notifications by the User through our Application.</p>

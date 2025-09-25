@@ -25,14 +25,16 @@ export default function Header() {
         return;
       }
       
-      // Add breadcrumbs based on current path
-      if (pathSegments[0] === 'pricing') {
-        newBreadcrumbs.push({ label: 'Pricing', href: '/pricing' });
-      } else if (pathSegments[0] === 'privacy') {
-        newBreadcrumbs.push({ label: 'Privacy Policy', href: '/privacy' });
-      } else if (pathSegments[0] === 'terms') {
-        newBreadcrumbs.push({ label: 'Terms of Service', href: '/terms' });
-      }
+             // Add breadcrumbs based on current path
+             if (pathSegments[0] === 'pricing') {
+               newBreadcrumbs.push({ label: 'Pricing', href: '/pricing' });
+             } else if (pathSegments[0] === 'permissions') {
+               newBreadcrumbs.push({ label: 'Permissions', href: '/permissions' });
+             } else if (pathSegments[0] === 'privacy') {
+               newBreadcrumbs.push({ label: 'Privacy Policy', href: '/privacy' });
+             } else if (pathSegments[0] === 'terms') {
+               newBreadcrumbs.push({ label: 'Terms of Service', href: '/terms' });
+             }
       
       setBreadcrumbs(newBreadcrumbs);
     }
@@ -57,17 +59,20 @@ export default function Header() {
              </div>
            </Link>
 
-          {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/pricing" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">
-              Pricing
-            </Link>
-            <Link href="/privacy" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">
-              Privacy
-            </Link>
-            <Link href="/terms" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">
-              Terms
-            </Link>
+                 {/* Navigation */}
+                 <nav className="hidden md:flex items-center space-x-8">
+                   <Link href="/pricing" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">
+                     Pricing
+                   </Link>
+                   <Link href="/permissions" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">
+                     Permissions
+                   </Link>
+                   <Link href="/privacy" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">
+                     Privacy
+                   </Link>
+                   <Link href="/terms" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">
+                     Terms
+                   </Link>
             <a 
               href="mailto:ridwan@puredetox.app" 
               className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
