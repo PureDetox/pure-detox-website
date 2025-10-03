@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { db } from "@/lib/firebase";
+import { addDoc, collection, serverTimestamp, query, where, getDocs } from "firebase/firestore";
 
 export default function EmailSignup() {
   const [email, setEmail] = useState("");
@@ -19,23 +21,23 @@ export default function EmailSignup() {
     }
 
     try {
-      // For now, we'll use a simple solution with Formspree or similar service
-      // You can replace this with your preferred email collection service
-      const response = await fetch("/api/signup", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+      // Check for duplicate email
+      const emailsRef = collection(db, "email_signups");
+      const q = query(emailsRef, where("email", "==", email));
+      const snapshot = await getDocs(q);
 
-      if (response.ok) {
-        setStatus("success");
-        setMessage("Thanks! We'll notify you when Pure Detox launches.");
-        setEmail("");
-      } else {
-        throw new Error("Failed to subscribe");
+      if (snapshot.empty) {
+        await addDoc(emailsRef, {
+          email,
+          timestamp: serverTimestamp(),
+          source: "coming-soon-page",
+          status: "subscribed",
+        });
       }
+
+      setStatus("success");
+      setMessage("Thanks! We'll notify you when Pure Detox launches.");
+      setEmail("");
     } catch (error) {
       setStatus("error");
       setMessage("Something went wrong. Please try again.");
