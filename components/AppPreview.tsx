@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function AppPreview() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -33,7 +33,7 @@ export default function AppPreview() {
               onPause={() => setIsPlaying(false)}
               onError={() => setVideoError("Video failed to load. Check file name and path in /public.")}
             >
-              <source src="/video6269078503128309285.mp4" type="video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"" />
+              <source src="/video6269078503128309285.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           ) : (
