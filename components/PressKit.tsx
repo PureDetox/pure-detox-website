@@ -10,18 +10,13 @@ export default function PressKit() {
   const screenshots = [
     {
       src: "/1st-image.png",
-      alt: "Pure Detox Main Dashboard - Focus Sessions and App Blocking",
+      alt: "Pure Detox Screenshot 1",
       title: "Main Dashboard"
     },
     {
       src: "/2nd-image.png", 
-      alt: "Pure Detox Settings - Customizable Blocking and Whitelist Options",
+      alt: "Pure Detox Screenshot 2",
       title: "Smart Controls"
-    },
-    {
-      src: "/logo.jpg",
-      alt: "Pure Detox App Icon - Digital Detox for Android",
-      title: "App Icon"
     }
   ];
 
@@ -49,16 +44,15 @@ export default function PressKit() {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {screenshots.map((screenshot, index) => (
             <div key={index} className="group">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg bg-gray-100 aspect-[9/16] group-hover:shadow-xl transition-shadow duration-300">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg bg-white aspect-[9/16] group-hover:shadow-xl transition-shadow duration-300 flex items-center justify-center">
                 <img
                   src={screenshot.src}
                   alt={screenshot.alt}
-                  className="w-full h-full object-contain bg-white"
+                  className="max-w-full max-h-full object-contain object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="font-semibold text-lg">{screenshot.title}</h3>
-                </div>
+              </div>
+              <div className="mt-3 text-center">
+                <h3 className="font-semibold text-gray-900">{screenshot.title}</h3>
               </div>
             </div>
           ))}
