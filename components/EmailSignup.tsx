@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { db } from "@/lib/firebase";
-import { addDoc, collection, serverTimestamp, query, where, getDocs } from "firebase/firestore";
+import { doc, setDoc, serverTimestamp } from "firebase/firestore";
 
 export default function EmailSignup() {
   const [email, setEmail] = useState("");
@@ -21,19 +21,17 @@ export default function EmailSignup() {
     }
 
     try {
-      // Check for duplicate email
-      const emailsRef = collection(db, "email_signups");
-      const q = query(emailsRef, where("email", "==", email));
-      const snapshot = await getDocs(q);
-
-      if (snapshot.empty) {
-        await addDoc(emailsRef, {
+      const emailKey = email.trim().toLowerCase().replace(/[\/#?\s]+/g, "_");
+      await setDoc(
+        doc(db, "email_signups", emailKey),
+        {
           email,
           timestamp: serverTimestamp(),
           source: "coming-soon-page",
           status: "subscribed",
-        });
-      }
+        },
+        { merge: true }
+      );
 
       setStatus("success");
       setMessage("Thanks! We'll notify you when Pure Detox launches.");
