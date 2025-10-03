@@ -40,7 +40,10 @@ export default function EmailSignup() {
       setEmail("");
     } catch (error) {
       setStatus("error");
-      setMessage("Something went wrong. Please try again.");
+      const friendly = error instanceof Error && error.message.includes("Missing or insufficient permissions")
+        ? "Signup blocked by database rules. Please enable Firestore and update security rules."
+        : "Something went wrong. Please try again.";
+      setMessage(friendly);
       console.error("Email signup error:", error);
     }
   };

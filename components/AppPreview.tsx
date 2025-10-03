@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function AppPreview() {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [videoError, setVideoError] = useState<string | null>(null);
 
   return (
     <div className="relative bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8 md:p-12">
@@ -21,16 +22,24 @@ export default function AppPreview() {
 
       <div className="relative max-w-2xl mx-auto">
         <div className="relative aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-2xl">
-          <video
-            className="w-full h-full object-cover"
-            poster="/logo.jpg"
-            controls
-            onPlay={() => setIsPlaying(true)}
-            onPause={() => setIsPlaying(false)}
-          >
-            <source src="/video6269078503128309285.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          {!videoError ? (
+            <video
+              className="w-full h-full object-cover"
+              poster="/logo.jpg"
+              controls
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
+              onError={() => setVideoError("Video failed to load. Check file name and path in /public.")}
+            >
+              <source src="/video6269078503128309285.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6 text-center">
+              <div className="mb-3">🎥 {videoError}</div>
+              <div className="text-sm opacity-80">Expected path: /public/video6269078503128309285.mp4</div>
+            </div>
+          )}
           
           {!isPlaying && (
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
