@@ -24,9 +24,11 @@ export default function AppPreview() {
         <div className="relative aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-2xl">
           {!videoError ? (
             <video
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain bg-black"
               poster="/logo.jpg"
               controls
+              playsInline
+              preload="metadata"
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
               onError={() => setVideoError("Video failed to load. Check file name and path in /public.")}
