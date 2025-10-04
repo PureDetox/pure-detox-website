@@ -41,14 +41,15 @@ export default function PressKit() {
         </div>
 
         {/* App Screenshots */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
           {screenshots.map((screenshot, index) => (
             <div key={index} className="group">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg bg-gray-100 aspect-[9/16] group-hover:shadow-xl transition-shadow duration-300">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-br from-gray-100 to-gray-50 group-hover:shadow-3xl transition-all duration-300">
                 <img
                   src={screenshot.src}
                   alt={screenshot.alt}
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto"
+                  loading="lazy"
                 />
               </div>
               <div className="mt-3 text-center">
