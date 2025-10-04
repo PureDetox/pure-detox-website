@@ -44,11 +44,11 @@ export default function PressKit() {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {screenshots.map((screenshot, index) => (
             <div key={index} className="group">
-              <div className="relative overflow-hidden rounded-2xl shadow-lg bg-white aspect-[9/16] group-hover:shadow-xl transition-shadow duration-300 flex items-center justify-center">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg bg-gray-100 aspect-[9/16] group-hover:shadow-xl transition-shadow duration-300">
                 <img
                   src={screenshot.src}
                   alt={screenshot.alt}
-                  className="max-w-full max-h-full object-contain object-center"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="mt-3 text-center">
