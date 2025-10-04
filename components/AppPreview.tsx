@@ -20,12 +20,12 @@ export default function AppPreview() {
         </p>
       </div>
 
-      <div className="relative max-w-xl mx-auto">
-        <div className="relative bg-gray-900 rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: '9/16' }}>
+      <div className="relative max-w-2xl mx-auto">
+        <div className="relative bg-gray-900 rounded-2xl overflow-hidden shadow-2xl">
           {!videoError ? (
             <video
               key="/video6269078503128309285.mp4"
-              className="w-full h-full object-cover bg-black"
+              className="w-full h-auto bg-black"
               poster="/logo.jpg"
               controls
               playsInline
