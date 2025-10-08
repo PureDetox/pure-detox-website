@@ -41,14 +41,14 @@ export default function PressKit() {
         </div>
 
         {/* App Screenshots */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-center items-start gap-8 mb-12">
           {screenshots.map((screenshot, index) => (
-            <div key={index} className="group">
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-br from-gray-50 to-white">
+            <div key={index} className="flex-1 max-w-sm">
+              <div className="rounded-2xl shadow-2xl overflow-hidden bg-white">
                 <img
                   src={screenshot.src}
                   alt={screenshot.alt}
-                  className="w-full h-auto max-w-full"
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
                   loading="lazy"
                 />
               </div>
@@ -80,13 +80,13 @@ export default function PressKit() {
           <p className="text-gray-600 mb-6">High-resolution screenshots and app preview video available for press coverage</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="mailto:ridwan@puredetox.app?subject=Press%20Kit%20Request" 
+              href="mailto:support@puredetox.app?subject=Press%20Kit%20Request" 
               className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200"
             >
               📧 Request Press Kit
             </a>
             <a 
-              href="mailto:ridwan@puredetox.app?subject=Media%20Inquiry" 
+              href="mailto:support@puredetox.app?subject=Media%20Inquiry" 
               className="inline-flex items-center px-6 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:border-gray-400 transition-colors duration-200"
             >
               📰 Media Inquiries

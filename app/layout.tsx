@@ -95,7 +95,7 @@ export default function RootLayout({
                   Reclaim your focus. Block distractions on Android without root. Ethical commitment with compassionate recovery.
                 </p>
                 <div className="flex space-x-4">
-                  <a href="mailto:ridwan@puredetox.app" className="text-blue-600 hover:text-blue-700 font-medium">
+                  <a href="mailto:support@puredetox.app" className="text-blue-600 hover:text-blue-700 font-medium">
                     Contact Support
                   </a>
                 </div>
@@ -114,8 +114,8 @@ export default function RootLayout({
               <div>
                 <h4 className="font-semibold text-gray-900 mb-4">Support</h4>
                 <ul className="space-y-3 text-gray-600">
-                  <li><a href="mailto:ridwan@puredetox.app" className="hover:text-blue-600 transition-colors">Contact Support</a></li>
-                  <li><a href="mailto:ridwan@puredetox.app" className="hover:text-blue-600 transition-colors">Help Center</a></li>
+                  <li><a href="mailto:support@puredetox.app" className="hover:text-blue-600 transition-colors">Contact Support</a></li>
+                  <li><a href="mailto:support@puredetox.app" className="hover:text-blue-600 transition-colors">Help Center</a></li>
                   <li><span className="text-gray-400">FAQ (Coming Soon)</span></li>
                   <li><span className="text-gray-400">User Guide</span></li>
                 </ul>
@@ -139,7 +139,7 @@ export default function RootLayout({
                   <p>&copy; 2025 NexusEdge. All rights reserved.</p>
                 </div>
                 <div className="text-gray-600 text-sm">
-                  <p>Made with ❤️ for digital wellbeing • Contact: ridwan@puredetox.app</p>
+                  <p>Made with ❤️ for digital wellbeing • Contact: support@puredetox.app</p>
                 </div>
               </div>
             </div>

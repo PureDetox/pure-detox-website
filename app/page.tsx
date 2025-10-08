@@ -13,7 +13,7 @@ export default function ComingSoonHome() {
     logo: "https://puredetox.app/logo.jpg",
     contactPoint: {
       "@type": "ContactPoint",
-      email: "ridwan@puredetox.app",
+      email: "support@puredetox.app",
       contactType: "customer service"
     },
     address: {
