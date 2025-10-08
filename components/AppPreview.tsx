@@ -20,12 +20,12 @@ export default function AppPreview() {
         </p>
       </div>
 
-      <div className="relative max-w-md mx-auto">
+      <div className="relative mx-auto" style={{ width: '350px', maxWidth: '100%' }}>
         <div className="relative bg-gray-900 rounded-2xl overflow-hidden shadow-2xl">
           {!videoError ? (
             <video
               key="/video6269078503128309285.mp4"
-              style={{ width: '100%', height: 'auto', display: 'block', backgroundColor: '#000' }}
+              style={{ width: '350px', height: '656.25px', objectFit: 'cover', display: 'block', backgroundColor: '#000' }}
               poster="/logo.jpg"
               controls
               playsInline

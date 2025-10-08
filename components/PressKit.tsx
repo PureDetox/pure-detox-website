@@ -41,14 +41,14 @@ export default function PressKit() {
         </div>
 
         {/* App Screenshots */}
-        <div className="flex flex-col md:flex-row justify-center items-start gap-8 mb-12">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-12 mb-12">
           {screenshots.map((screenshot, index) => (
-            <div key={index} className="flex-1 max-w-sm">
-              <div className="rounded-2xl shadow-2xl overflow-hidden bg-white">
+            <div key={index} className="w-full md:w-auto">
+              <div className="rounded-2xl shadow-2xl overflow-hidden bg-white mx-auto" style={{ width: '300px', maxWidth: '100%' }}>
                 <img
                   src={screenshot.src}
                   alt={screenshot.alt}
-                  style={{ width: '100%', height: 'auto', display: 'block' }}
+                  style={{ width: '300px', height: '562.5px', objectFit: 'cover', display: 'block' }}
                   loading="lazy"
                 />
               </div>
