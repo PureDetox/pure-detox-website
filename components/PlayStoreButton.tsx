@@ -12,9 +12,9 @@ export default function PlayStoreButton({
   className = ""
 }: PlayStoreButtonProps) {
   const sizes = {
-    sm: "h-12",
-    md: "h-14",
-    lg: "h-16"
+    sm: "h-12 min-h-[48px]",
+    md: "h-14 min-h-[56px]",
+    lg: "h-16 min-h-[64px]"
   };
 
   return (
@@ -22,7 +22,7 @@ export default function PlayStoreButton({
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-block transition-transform hover:scale-105 active:scale-95 ${sizes[size]} ${className}`}
+      className={`inline-block transition-transform hover:scale-105 active:scale-95 touch-manipulation ${sizes[size]} ${className}`}
       aria-label="Download PureDetox on Google Play"
     >
       <img

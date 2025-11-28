@@ -130,9 +130,9 @@ export default function RootLayout({
         {children}
         
         {/* Global Footer - Appears on Every Page */}
-        <footer className="bg-gray-50 border-t border-gray-200 mt-16">
-          <div className="container py-12">
-            <div className="grid md:grid-cols-4 gap-8">
+        <footer className="bg-gray-50 border-t border-gray-200 mt-12">
+          <div className="container py-8">
+            <div className="grid md:grid-cols-4 gap-6">
                <div className="space-y-4">
                  <div className="flex items-center space-x-2">
                    <img 

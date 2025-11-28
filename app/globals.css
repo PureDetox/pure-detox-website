@@ -34,6 +34,20 @@ body {
 * {
 	-webkit-tap-highlight-color: transparent;
 }
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+	/* Ensure touch targets are at least 44x44px */
+	a, button {
+		min-height: 44px;
+		min-width: 44px;
+	}
+	
+	/* Improve touch response */
+	.touch-manipulation {
+		touch-action: manipulation;
+	}
+}
 html:focus-within {
 	scroll-behavior: smooth;
 }

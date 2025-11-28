@@ -7,21 +7,21 @@ export default function AppPreview() {
   const [videoError, setVideoError] = useState<string | null>(null);
 
   return (
-    <div className="relative bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8 md:p-12">
-      <div className="text-center mb-8">
-        <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
+    <div className="relative bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl md:rounded-2xl p-4 md:p-8">
+      <div className="text-center mb-4 md:mb-6">
+        <div className="inline-flex items-center px-3 py-1.5 bg-blue-100 text-blue-800 rounded-full text-xs font-medium mb-2 md:mb-3">
           🎬 App Preview
         </div>
-        <h2 id="preview-heading" className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+        <h2 id="preview-heading" className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2 px-2">
           See Pure Detox in Action
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Watch how easy it is to block distracting apps and focus on what matters most
+        <p className="text-xs sm:text-sm md:text-base text-gray-600 max-w-xl mx-auto px-2">
+          Watch how easy it is to block distracting apps and focus
         </p>
       </div>
 
-      <div className="relative max-w-2xl mx-auto">
-        <div className="relative bg-gray-900 rounded-2xl overflow-hidden shadow-2xl">
+      <div className="relative max-w-full md:max-w-xl mx-auto">
+        <div className="relative bg-gray-900 rounded-xl overflow-hidden shadow-xl">
           {!videoError ? (
             <video
               key="/video6269078503128309285.mp4"
@@ -52,29 +52,29 @@ export default function AppPreview() {
         </div>
 
         {/* Video highlights */}
-        <div className="grid md:grid-cols-3 gap-4 mt-8">
-          <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-              <span className="text-blue-600 text-lg">⚡</span>
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-2 md:gap-3 mt-4 md:mt-6">
+          <div className="text-center p-2 md:p-3 bg-white rounded-lg shadow-sm">
+            <div className="w-7 h-7 md:w-8 md:h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-1 md:mb-2">
+              <span className="text-blue-600 text-sm md:text-base">⚡</span>
             </div>
-            <h4 className="font-semibold text-gray-900 mb-1">Quick Setup</h4>
-            <p className="text-sm text-gray-600">Get started in under 60 seconds</p>
+            <h4 className="font-semibold text-xs md:text-sm text-gray-900 mb-0.5 md:mb-1">Quick Setup</h4>
+            <p className="text-[10px] md:text-xs text-gray-600">60 seconds</p>
           </div>
           
-          <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-            <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
-              <span className="text-purple-600 text-lg">🎯</span>
+          <div className="text-center p-2 md:p-3 bg-white rounded-lg shadow-sm">
+            <div className="w-7 h-7 md:w-8 md:h-8 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-1 md:mb-2">
+              <span className="text-purple-600 text-sm md:text-base">🎯</span>
             </div>
-            <h4 className="font-semibold text-gray-900 mb-1">Smart Blocking</h4>
-            <p className="text-sm text-gray-600">Target specific apps and sites</p>
+            <h4 className="font-semibold text-xs md:text-sm text-gray-900 mb-0.5 md:mb-1">Smart Blocking</h4>
+            <p className="text-[10px] md:text-xs text-gray-600">Target apps</p>
           </div>
           
-          <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-            <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
-              <span className="text-green-600 text-lg">📈</span>
+          <div className="text-center p-2 md:p-3 bg-white rounded-lg shadow-sm">
+            <div className="w-7 h-7 md:w-8 md:h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-1 md:mb-2">
+              <span className="text-green-600 text-sm md:text-base">📈</span>
             </div>
-            <h4 className="font-semibold text-gray-900 mb-1">Track Progress</h4>
-            <p className="text-sm text-gray-600">See your focus improvements</p>
+            <h4 className="font-semibold text-xs md:text-sm text-gray-900 mb-0.5 md:mb-1">Track Progress</h4>
+            <p className="text-[10px] md:text-xs text-gray-600">See results</p>
           </div>
         </div>
       </div>
