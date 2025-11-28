@@ -12,25 +12,26 @@ export default function AppPreview() {
         <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
           🎬 App Preview
         </div>
-        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+        <h2 id="preview-heading" className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
           See Pure Detox in Action
-        </h3>
+        </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Watch how easy it is to block distracting apps and focus on what matters most
         </p>
       </div>
 
-      <div className="relative mx-auto" style={{ width: '350px', maxWidth: '100%' }}>
+      <div className="relative max-w-2xl mx-auto">
         <div className="relative bg-gray-900 rounded-2xl overflow-hidden shadow-2xl">
           {!videoError ? (
             <video
               key="/video6269078503128309285.mp4"
-              style={{ width: '350px', height: '656.25px', objectFit: 'cover', display: 'block', backgroundColor: '#000' }}
+              className="w-full h-auto bg-black"
               poster="/logo.jpg"
               controls
               playsInline
               preload="metadata"
               muted
+              aria-label="PureDetox app preview video showing how to block apps and websites"
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
               onLoadedMetadata={() => console.log('Video loaded successfully')}

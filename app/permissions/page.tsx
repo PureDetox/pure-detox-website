@@ -156,7 +156,7 @@ export default function PermissionsPage() {
                 <div>
                   <h3 className="font-semibold mb-4 text-lg">Need Help?</h3>
                   <ul className="space-y-2">
-                    <li><span className="font-medium">Questions:</span> <a href="mailto:support@puredetox.app" className="text-blue-400 hover:text-blue-300">support@puredetox.app</a></li>
+                    <li><span className="font-medium">Questions:</span> <a href="mailto:ridwan@puredetox.app" className="text-blue-400 hover:text-blue-300">ridwan@puredetox.app</a></li>
                     <li><span className="font-medium">Privacy Policy:</span> <Link href="/privacy" className="text-blue-400 hover:text-blue-300">Full details</Link></li>
                     <li><span className="font-medium">Terms:</span> <Link href="/terms" className="text-blue-400 hover:text-blue-300">Terms of Service</Link></li>
                     <li><span className="font-medium">Delete Account:</span> <Link href="/account-deletion" className="text-red-400 hover:text-red-300">Account Deletion</Link></li>

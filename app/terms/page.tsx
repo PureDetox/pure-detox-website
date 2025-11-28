@@ -80,7 +80,7 @@ export default function TermsOfService() {
               
               <p><strong>2.3</strong> Users may register free of charge through the Application. In the course of registration, Users enter their password and their email. The Registration is made online. After a User&apos;s Profile is created, the User may add other information.</p>
               
-              <p><strong>2.4</strong> Users are fully liable for the use of the user name, password and/or other login data entered during the registration process. Users are obliged to keep their login data confidential and secure and to adopt adequate measures to maintain the security and confidentiality of their login data (including changing their login data regularly). Should their login data be revealed, stolen or misused, the Users are obliged to change their login data immediately and inform the Operator by sending an e-mail to <a href="mailto:support@puredetox.app" className="text-blue-600 hover:underline font-medium">support@puredetox.app</a>.</p>
+              <p><strong>2.4</strong> Users are fully liable for the use of the user name, password and/or other login data entered during the registration process. Users are obliged to keep their login data confidential and secure and to adopt adequate measures to maintain the security and confidentiality of their login data (including changing their login data regularly). Should their login data be revealed, stolen or misused, the Users are obliged to change their login data immediately and inform the Operator by sending an e-mail to <a href="mailto:ridwan@puredetox.app" className="text-blue-600 hover:underline font-medium">ridwan@puredetox.app</a>.</p>
             </div>
           </section>
 
@@ -197,7 +197,7 @@ export default function TermsOfService() {
                 <ul className="space-y-2">
                   <li><span className="font-medium">Company:</span> NexusEdge</li>
                   <li><span className="font-medium">Operator:</span> Ridwan Mullick</li>
-                  <li><span className="font-medium">Email:</span> <a href="mailto:support@puredetox.app" className="text-blue-400 hover:text-blue-300">support@puredetox.app</a></li>
+                  <li><span className="font-medium">Email:</span> <a href="mailto:ridwan@puredetox.app" className="text-blue-400 hover:text-blue-300">ridwan@puredetox.app</a></li>
                   <li><span className="font-medium">Address:</span> Eksara, Howrah 711114</li>
                   <li><span className="font-medium">State:</span> West Bengal, India</li>
                 </ul>

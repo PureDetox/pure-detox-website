@@ -115,10 +115,10 @@ export default function AccountDeletionPage() {
                   <p className="text-gray-700">Submit a deletion request to:</p>
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <a 
-                      href="mailto:support@puredetox.app?subject=Account Deletion Request&body=I would like to delete my PureDetox account and all associated data. Please confirm when this has been completed."
+                      href="mailto:ridwan@puredetox.app?subject=Account Deletion Request&body=I would like to delete my PureDetox account and all associated data. Please confirm when this has been completed."
                       className="text-blue-600 hover:text-blue-700 font-medium text-lg"
                     >
-                      support@puredetox.app
+                      ridwan@puredetox.app
                     </a>
                   </div>
                   
@@ -167,10 +167,10 @@ export default function AccountDeletionPage() {
                   <p className="text-gray-700">Send your specific data deletion request to:</p>
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <a 
-                      href="mailto:support@puredetox.app?subject=Data Deletion Request - Keep Account Active&body=I would like to delete specific data from my PureDetox account while keeping the account active.%0A%0APlease delete the following data:%0A☐ Backup files%0A☐ Personal settings and configurations%0A☐ Usage statistics%0A☐ Support conversation history%0A☐ Other (please specify): ____________%0A%0AMy account email: ____________%0A%0APlease confirm when this has been completed."
+                      href="mailto:ridwan@puredetox.app?subject=Data Deletion Request - Keep Account Active&body=I would like to delete specific data from my PureDetox account while keeping the account active.%0A%0APlease delete the following data:%0A☐ Backup files%0A☐ Personal settings and configurations%0A☐ Usage statistics%0A☐ Support conversation history%0A☐ Other (please specify): ____________%0A%0AMy account email: ____________%0A%0APlease confirm when this has been completed."
                       className="text-blue-600 hover:text-blue-700 font-medium text-lg"
                     >
-                      support@puredetox.app
+                      ridwan@puredetox.app
                     </a>
                   </div>
                   
@@ -370,7 +370,7 @@ export default function AccountDeletionPage() {
                 <div>
                   <h3 className="font-semibold mb-4 text-lg">Before You Delete</h3>
                   <ul className="space-y-2">
-                    <li><span className="font-medium">Questions:</span> <a href="mailto:support@puredetox.app" className="text-blue-400 hover:text-blue-300">support@puredetox.app</a></li>
+                    <li><span className="font-medium">Questions:</span> <a href="mailto:ridwan@puredetox.app" className="text-blue-400 hover:text-blue-300">ridwan@puredetox.app</a></li>
                     <li><span className="font-medium">Privacy Policy:</span> <Link href="/privacy" className="text-blue-400 hover:text-blue-300">Full details</Link></li>
                     <li><span className="font-medium">Terms:</span> <Link href="/terms" className="text-blue-400 hover:text-blue-300">Terms of Service</Link></li>
                     <li><span className="font-medium">Permissions:</span> <Link href="/permissions" className="text-blue-400 hover:text-blue-300">Permission Info</Link></li>

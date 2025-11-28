@@ -174,7 +174,7 @@ export default function PrivacyPolicy() {
 
               <p>We also process statistical anonymized information in order to find out in what manner the Users or the visitors use the application.</p>
 
-              <p>You may refuse the processing of your personal data for the purpose of sending commercial communications at any time and this will not affect our other mutual relationships. All you have to do is to refuse sending other messages by clicking on the link located in the footer of the sent commercial communication or you can send us an e-mail with the appropriate request at <a href="mailto:support@puredetox.app" className="text-blue-600 hover:underline font-medium">support@puredetox.app</a>.</p>
+              <p>You may refuse the processing of your personal data for the purpose of sending commercial communications at any time and this will not affect our other mutual relationships. All you have to do is to refuse sending other messages by clicking on the link located in the footer of the sent commercial communication or you can send us an e-mail with the appropriate request at <a href="mailto:ridwan@puredetox.app" className="text-blue-600 hover:underline font-medium">ridwan@puredetox.app</a>.</p>
             </div>
           </section>
 
@@ -255,7 +255,7 @@ export default function PrivacyPolicy() {
                 </p>
               </div>
 
-              <p>You may disable backups at any time in the app settings. You can also request permanent deletion of your backups by contacting us at <a href="mailto:support@puredetox.app" className="text-blue-600 hover:underline font-medium">support@puredetox.app</a>.</p>
+              <p>You may disable backups at any time in the app settings. You can also request permanent deletion of your backups by contacting us at <a href="mailto:ridwan@puredetox.app" className="text-blue-600 hover:underline font-medium">ridwan@puredetox.app</a>.</p>
             </div>
           </section>
 
@@ -352,7 +352,7 @@ export default function PrivacyPolicy() {
               <p className="mb-4 font-medium">If you wish to exercise your rights, you can do so:</p>
               <ul className="list-disc list-inside space-y-2">
                 <li>By a letter addressed to NexusEdge (operated by Ridwan Mullick) at Eksara, Howrah 711114, West Bengal, India.</li>
-                <li>By e-mail to: <a href="mailto:support@puredetox.app" className="text-blue-600 hover:underline font-medium">support@puredetox.app</a></li>
+                <li>By e-mail to: <a href="mailto:ridwan@puredetox.app" className="text-blue-600 hover:underline font-medium">ridwan@puredetox.app</a></li>
               </ul>
             </div>
           </section>
@@ -365,7 +365,7 @@ export default function PrivacyPolicy() {
                 <ul className="space-y-2">
                   <li><span className="font-medium">Company:</span> NexusEdge</li>
                   <li><span className="font-medium">Operator:</span> Ridwan Mullick</li>
-                  <li><span className="font-medium">Email:</span> <a href="mailto:support@puredetox.app" className="text-blue-400 hover:text-blue-300">support@puredetox.app</a></li>
+                  <li><span className="font-medium">Email:</span> <a href="mailto:ridwan@puredetox.app" className="text-blue-400 hover:text-blue-300">ridwan@puredetox.app</a></li>
                   <li><span className="font-medium">Address:</span> Eksara, Howrah 711114</li>
                   <li><span className="font-medium">State:</span> West Bengal, India</li>
                 </ul>

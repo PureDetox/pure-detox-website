@@ -41,14 +41,14 @@ export default function PressKit() {
         </div>
 
         {/* App Screenshots */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-12 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
           {screenshots.map((screenshot, index) => (
-            <div key={index} className="w-full md:w-auto">
-              <div className="rounded-2xl shadow-2xl overflow-hidden bg-white mx-auto" style={{ width: '300px', maxWidth: '100%' }}>
+            <div key={index} className="group">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-br from-gray-50 to-white">
                 <img
                   src={screenshot.src}
                   alt={screenshot.alt}
-                  style={{ width: '300px', height: '562.5px', objectFit: 'cover', display: 'block' }}
+                  className="w-full h-auto max-w-full"
                   loading="lazy"
                 />
               </div>
@@ -80,13 +80,13 @@ export default function PressKit() {
           <p className="text-gray-600 mb-6">High-resolution screenshots and app preview video available for press coverage</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="mailto:support@puredetox.app?subject=Press%20Kit%20Request" 
+              href="mailto:ridwan@puredetox.app?subject=Press%20Kit%20Request" 
               className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200"
             >
               📧 Request Press Kit
             </a>
             <a 
-              href="mailto:support@puredetox.app?subject=Media%20Inquiry" 
+              href="mailto:ridwan@puredetox.app?subject=Media%20Inquiry" 
               className="inline-flex items-center px-6 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:border-gray-400 transition-colors duration-200"
             >
               📰 Media Inquiries

@@ -47,13 +47,14 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
            {/* Logo */}
-           <Link href="/" className="flex items-center space-x-3">
+           <Link href="/" className="flex items-center space-x-3" aria-label="Pure Detox Home">
              <img 
                src="/logo.jpg" 
-               alt="Pure Detox Logo" 
+               alt="Pure Detox - Android App Blocker and Digital Detox App Logo" 
                className="w-10 h-10 rounded-xl shadow-lg object-cover"
                width={40}
                height={40}
+               loading="eager"
              />
              <div className="flex flex-col">
                <span className="text-xl font-bold text-gray-900">Pure Detox</span>
@@ -62,7 +63,7 @@ export default function Header() {
            </Link>
 
                  {/* Navigation */}
-                 <nav className="hidden md:flex items-center space-x-8">
+                 <nav className="hidden md:flex items-center space-x-6">
                    <Link href="/pricing" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">
                      Pricing
                    </Link>
@@ -76,20 +77,33 @@ export default function Header() {
                      Terms
                    </Link>
             <a 
-              href="mailto:support@puredetox.app" 
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+              href="https://play.google.com/store/apps/details?id=com.nexusedge.puredetox"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium flex items-center gap-2"
+            >
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+              </svg>
+              Download
+            </a>
+            <a 
+              href="mailto:ridwan@puredetox.app" 
+              className="text-gray-600 hover:text-blue-600 font-medium transition-colors"
             >
               Contact
             </a>
           </nav>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
             <a 
-              href="mailto:support@puredetox.app" 
-              className="bg-blue-600 text-white px-3 py-1.5 rounded-lg text-sm font-medium"
+              href="https://play.google.com/store/apps/details?id=com.nexusedge.puredetox"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 text-white px-3 py-1.5 rounded-lg text-sm font-medium"
             >
-              Contact
+              Download
             </a>
           </div>
         </div>
@@ -98,7 +112,7 @@ export default function Header() {
         {breadcrumbs.length > 1 && (
           <div className="pb-4">
             <nav className="flex" aria-label="Breadcrumb">
-              <ol className="flex items-center space-x-2 text-sm">
+              <ol className="flex items-center space-x-2 text-sm" itemScope itemType="https://schema.org/BreadcrumbList">
                 {breadcrumbs.map((crumb, index) => (
                   <li key={crumb.href} className="flex items-center">
                     {index > 0 && (

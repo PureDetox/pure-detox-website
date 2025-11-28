@@ -21,7 +21,7 @@ export default function PricingPage() {
     { question: "Do you offer a money‑back guarantee?", answer: "Yes. 14‑day money‑back—no questions asked." },
     { question: "Which Android versions are supported?", answer: "Recent Android versions with accessibility and device permissions—most devices are supported." },
     { question: "Can users bypass the blocks?", answer: "Bypass attempts are discouraged with friction; commitment features require explicit consent; emergency exit is always visible." },
-    { question: "How do you handle my data?", answer: "No data sale. Minimal data by default. Contact support@puredetox.app or see our <a href='/privacy' class='text-blue-600 hover:underline'>privacy policy</a> for details." },
+    { question: "How do you handle my data?", answer: "No data sale. Minimal data by default. Contact ridwan@puredetox.app or see our <a href='/privacy' class='text-blue-600 hover:underline'>privacy policy</a> for details." },
   ];
 
   const softwareApplication = {
