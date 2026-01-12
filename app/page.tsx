@@ -250,7 +250,7 @@ export default function Home() {
                 <StatItem value="32%" label="Less Screen Time" />
                 <StatItem value="2h+" label="Saved Daily" />
                 <StatItem value="4.8/5" label="User Rating" />
-                <StatItem value="1M+" label="Distractions Blocked" />
+                <StatItem value="500" label="Distractions Blocked" />
              </div>
           </div>
         </section>
@@ -399,3 +399,4 @@ function FAQItem({ question, answer }: { question: string, answer: string }) {
     </div>
   );
 }
+
